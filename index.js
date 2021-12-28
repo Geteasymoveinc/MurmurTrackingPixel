@@ -20,7 +20,7 @@ function error(err) {
       axios.post(
         "https://backendapp.murmurcars.com/api/v1/campaignanalytics/location",
         {
-          advertiser: "Easymove",
+          advertiser: "Testing",
           response: response.data,
           geolocation: { latitude: null, longitude: null },
           date: new Date(),
@@ -41,7 +41,7 @@ function success(pos) {
   axios.post(
     "https://backendapp.murmurcars.com/api/v1/campaignanalytics/location",
     {
-      advertiser: "Easymove",
+      advertiser: "Testing",
 
       geolocation: {
         latitude: pos.coords.latitude,
@@ -59,7 +59,7 @@ function success(pos) {
       axios.post(
         "https://backendapp.murmurcars.com/api/v1/campaignanalytics/location",
         {
-          advertiser: "Easymove",
+          advertiser: "Testing",
           response: response.data,
           geolocation: {
             latitude: pos.coords.latitude,
